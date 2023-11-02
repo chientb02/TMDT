@@ -1,8 +1,10 @@
 package com.example.tmdt.model;
+
 import com.example.tmdt.core.model_base.BaseEntity;
 import com.example.tmdt.model.fkProduct.*;
 import com.example.tmdt.security.model.Account;
 import lombok.EqualsAndHashCode;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -17,22 +19,22 @@ public class Product extends BaseEntity {
     private String name;
     private Double quantity;
     private String description;
-    private Double price ;
-    private Integer promotion ;
+    private Double price;
+    private Integer promotion;
     @Column(columnDefinition = "integer default 0")
-    private Integer count ;
+    private Integer count;
+    @OneToMany(cascade = CascadeType.ALL)
+    private List<Comment> comment;
     @ManyToOne
-    private Comment comment ;
+    private Brand brand;
     @ManyToOne
-    private Brand brand ;
-    @ManyToOne
-    private Shop shop ;
+    private Shop shop;
     @ManyToOne
     private Option option;
     @ManyToOne
-    private Category category ;
+    private Category category;
     @OneToMany(cascade = CascadeType.ALL)
     private List<Image> image;
     @ManyToOne
-    private Account account ;
+    private Account account;
 }
