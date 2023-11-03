@@ -27,6 +27,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	runtimeOnly 'com.mysql:mysql-connector-j'
 	testImplementation 'org.springframework.security:spring-security-test'
+	annotationProcessor 'org.projectlombok:lombok'
+	compileOnly 'org.projectlombok:lombok'
 
 	//jwt
 	// https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt-api
@@ -45,8 +47,7 @@ dependencies {
 
 	//jhipster
 	implementation group: 'io.github.jhipster', name: 'jhipster-framework', version: '3.9.0'
-	annotationProcessor 'org.projectlombok:lombok'
-	compileOnly 'org.projectlombok:lombok'
+
 
 }
 

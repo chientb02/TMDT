@@ -1,8 +1,9 @@
-package com.example.tmdt.security.model;
+package com.example.tmdt.model;
 import com.example.tmdt.model.Discount;
 import com.example.tmdt.model.address.Address;
 import javax.persistence.*;
 
+import com.example.tmdt.security.model.Account;
 import lombok.EqualsAndHashCode;
 
 @Entity
