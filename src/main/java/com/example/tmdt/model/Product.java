@@ -17,10 +17,10 @@ public class Product extends BaseEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    private Double quantity;
+    private Integer quantity;
     private String description;
     private Double price;
-    private Integer promotion;
+    private Double promotion;
     @Column(columnDefinition = "integer default 0")
     private Integer count;
     @OneToMany(cascade = CascadeType.ALL)
