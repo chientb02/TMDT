@@ -30,7 +30,7 @@ public class Product extends BaseEntity {
     @ManyToOne
     private Shop shop;
     @ManyToOne
-    private Option option;
+    private OptionProduct option;
     @ManyToOne
     private Category category;
     @OneToMany(cascade = CascadeType.ALL)

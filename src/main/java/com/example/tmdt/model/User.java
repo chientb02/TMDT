@@ -1,5 +1,5 @@
 package com.example.tmdt.model;
-import com.example.tmdt.model.Discount;
+import com.example.tmdt.core.model_base.BaseEntity;
 import com.example.tmdt.model.address.Address;
 import javax.persistence.*;
 
@@ -9,7 +9,7 @@ import lombok.EqualsAndHashCode;
 @Entity
 @Table(name = "User")
 @EqualsAndHashCode(callSuper = false)
-public class User {
+public class User extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id ;

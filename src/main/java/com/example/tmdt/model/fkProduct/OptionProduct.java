@@ -5,9 +5,9 @@ import lombok.EqualsAndHashCode;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Option")
+@Table(name = "OptionProduct")
 @EqualsAndHashCode(callSuper = false)
-public class Option extends BaseEntity {
+public class OptionProduct extends BaseEntity {
     @Id
     @Column(name = "id", nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
