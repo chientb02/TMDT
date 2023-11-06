@@ -2,8 +2,10 @@ package com.example.tmdt.model.fkProduct;
 import com.example.tmdt.core.model_base.BaseEntity;
 import com.example.tmdt.model.address.Address;
 import com.example.tmdt.security.model.Account;
+import lombok.Data;
 import lombok.EqualsAndHashCode;
 import javax.persistence.*;
+@Data
 @Entity
 @Table(name = "Shop")
 @EqualsAndHashCode(callSuper = false)

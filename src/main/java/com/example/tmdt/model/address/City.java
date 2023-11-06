@@ -1,9 +1,11 @@
 package com.example.tmdt.model.address;
 
 import com.example.tmdt.core.model_base.BaseEntity;
+import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
+@Data
 
 @Entity
 @Table(name = "City")

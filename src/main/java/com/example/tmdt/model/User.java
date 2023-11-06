@@ -4,8 +4,9 @@ import com.example.tmdt.model.address.Address;
 import javax.persistence.*;
 
 import com.example.tmdt.security.model.Account;
+import lombok.Data;
 import lombok.EqualsAndHashCode;
-
+@Data
 @Entity
 @Table(name = "User")
 @EqualsAndHashCode(callSuper = false)

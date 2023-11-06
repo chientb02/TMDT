@@ -1,8 +1,10 @@
 package com.example.tmdt.model.buyPrd;
 import com.example.tmdt.core.model_base.BaseEntity;
 import com.example.tmdt.security.model.Account;
+import lombok.Data;
 import lombok.EqualsAndHashCode;
 import javax.persistence.*;
+@Data
 @Entity
 @Table(name = "Cart")
 @EqualsAndHashCode(callSuper = false)

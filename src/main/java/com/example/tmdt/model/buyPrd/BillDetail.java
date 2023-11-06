@@ -1,8 +1,10 @@
 package com.example.tmdt.model.buyPrd;
 import com.example.tmdt.core.model_base.BaseEntity;
 import com.example.tmdt.model.Product;
+import lombok.Data;
 import lombok.EqualsAndHashCode;
 import javax.persistence.*;
+@Data
 @Entity
 @Table(name = "BillDetail")
 @EqualsAndHashCode(callSuper = false)

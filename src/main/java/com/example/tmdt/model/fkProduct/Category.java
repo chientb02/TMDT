@@ -1,7 +1,9 @@
 package com.example.tmdt.model.fkProduct;
 import com.example.tmdt.core.model_base.BaseEntity;
+import lombok.Data;
 import lombok.EqualsAndHashCode;
 import javax.persistence.*;
+@Data
 @Entity
 @Table(name = "Category")
 @EqualsAndHashCode(callSuper = false)
